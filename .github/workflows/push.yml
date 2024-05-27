@@ -13,4 +13,5 @@ jobs:
             --header 'Content-Type: multipart/form-data' \
             --header 'Authorization: bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}' \
             --form 'file=@db.ericp.co' \
-            --form proxied=
+            --form proxied= \
+            --fail-with-body
