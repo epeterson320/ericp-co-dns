@@ -30,17 +30,13 @@ ericp.co.	3600	IN	SOA	justin.ns.cloudflare.com. dns.cloudflare.com. 2046808090 1
 ericp.co.	86400	IN	NS	justin.ns.cloudflare.com.
 ericp.co.	86400	IN	NS	liz.ns.cloudflare.com.
 
-;; A Records
-ericp.co.	1	IN	A	13.57.148.141
-ericp.co.	1	IN	A	50.18.215.94
-www.ericp.co.	1	IN	A	52.9.166.110
-www.ericp.co.	1	IN	A	50.18.215.94
-
-;; AAAA Records
-ericp.co.	1	IN	AAAA	2600:1f1c:446:4900::64
-ericp.co.	1	IN	AAAA	2600:1f1c:471:9d00::c8
-www.ericp.co.	1	IN	AAAA	2600:1f1c:446:4901::64
-www.ericp.co.	1	IN	AAAA	2600:1f1c:471:9d00::c8
+;; CNAME Records
+ericp.co.           1 IN CNAME blog-2m4.pages.dev.
+www                 1 IN CNAME blog-2m4.pages.dev.
+codeck              1 IN CNAME codeck.pages.dev.
+triangle-calculator 1 IN CNAME triangle-calculator.pages.dev.
+kqp33               1 IN CNAME kqp33.pages.dev.
+namemypub           1 IN CNAME static-sites-5az.pages.dev.
 
 ;; MX Records
 ericp.co.	1	IN	MX	5 gmr-smtp-in.l.google.com.
