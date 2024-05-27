@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     ericp.co.
-;; Exported:   2024-05-22 21:45:09
+;; Exported:   2024-05-27 16:59:34
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,19 +24,19 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-ericp.co.	3600	IN	SOA	justin.ns.cloudflare.com. dns.cloudflare.com. 2046808090 10000 2400 604800 3600
+ericp.co	3600	IN	SOA	justin.ns.cloudflare.com. dns.cloudflare.com. 2046849577 10000 2400 604800 3600
 
 ;; NS Records
 ericp.co.	86400	IN	NS	justin.ns.cloudflare.com.
 ericp.co.	86400	IN	NS	liz.ns.cloudflare.com.
 
 ;; CNAME Records
-ericp.co.           1 IN CNAME blog-2m4.pages.dev.
-www                 1 IN CNAME blog-2m4.pages.dev.
-codeck              1 IN CNAME codeck.pages.dev.
-triangle-calculator 1 IN CNAME triangle-calculator.pages.dev.
-kqp33               1 IN CNAME kqp33.pages.dev.
-namemypub           1 IN CNAME static-sites-5az.pages.dev.
+codeck.ericp.co.	1	IN	CNAME	codeck.pages.dev.
+ericp.co.	1	IN	CNAME	blog-2m4.pages.dev.
+kqp33.ericp.co.	1	IN	CNAME	kqp33.pages.dev.
+namemypub.ericp.co.	1	IN	CNAME	static-sites-5az.pages.dev.
+triangle-calculator.ericp.co.	1	IN	CNAME	triangle-calculator.pages.dev.
+www.ericp.co.	1	IN	CNAME	blog-2m4.pages.dev.
 
 ;; MX Records
 ericp.co.	1	IN	MX	5 gmr-smtp-in.l.google.com.
