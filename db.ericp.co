@@ -1,6 +1,6 @@
 ;;
 ;; Domain:     ericp.co.
-;; Exported:   2024-05-27 16:59:34
+;; Exported:   2024-05-27 17:07:13
 ;;
 ;; This file is intended for use for informational and archival
 ;; purposes ONLY and MUST be edited before use on a production
@@ -24,7 +24,7 @@
 ;;
 ;; Use at your own risk.
 ;; SOA Record
-ericp.co	3600	IN	SOA	justin.ns.cloudflare.com. dns.cloudflare.com. 2046849577 10000 2400 604800 3600
+ericp.co	3600	IN	SOA	justin.ns.cloudflare.com. dns.cloudflare.com. 2046849623 10000 2400 604800 3600
 
 ;; NS Records
 ericp.co.	86400	IN	NS	justin.ns.cloudflare.com.
@@ -39,8 +39,9 @@ triangle-calculator.ericp.co.	1	IN	CNAME	triangle-calculator.pages.dev.
 www.ericp.co.	1	IN	CNAME	blog-2m4.pages.dev.
 
 ;; MX Records
-ericp.co.	1	IN	MX	5 gmr-smtp-in.l.google.com.
-ericp.co.	1	IN	MX	10 alt1.gmr-smtp-in.l.google.com.
-ericp.co.	1	IN	MX	20 alt2.gmr-smtp-in.l.google.com.
-ericp.co.	1	IN	MX	30 alt3.gmr-smtp-in.l.google.com.
-ericp.co.	1	IN	MX	40 alt4.gmr-smtp-in.l.google.com.
+ericp.co.	1	IN	MX	18 route3.mx.cloudflare.net.
+ericp.co.	1	IN	MX	99 route2.mx.cloudflare.net.
+ericp.co.	1	IN	MX	56 route1.mx.cloudflare.net.
+
+;; TXT Records
+ericp.co.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
