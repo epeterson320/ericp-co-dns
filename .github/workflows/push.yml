@@ -1,0 +1,16 @@
+name: Publish to Cloudflare
+on: [push]
+jobs:
+  bulk-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Upload to Cloudflare
+        run: |
+          curl --request POST \
+            --url https://api.cloudflare.com/client/v4/zones/${{ vars.CLOUDFLARE_ZONE_ID }}/dns_records/import \
+            --header 'Content-Type: multipart/form-data' \
+            --header 'Authorization: bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}' \
+            --form 'file=@db.ericp.co' \
+            --form proxied=
